@@ -1,0 +1,247 @@
+:root {
+    --ebony-clay:#252B42;
+    --jordy-blue:#8EC2F2;
+    --jungle-green:#2DC071;
+    --white:#FFFFFF;
+    --silver:#BDBDBD;
+}
+
+.bg-ebony-clay{
+    background-color: var(--ebony-clay);
+}
+
+.bg-silver{
+    background-color: var(--silver);
+}
+
+.bg-jungle-green{
+    background-color: var(--jungle-green);
+}
+
+.banner--bg-image{
+    background-image: url("../images/pic1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg--supernova{
+    background-color: #F3CD03;
+}
+
+.bg--black-75{
+    background: rgba(0, 0, 0, 0.75);
+    /* background: linear-gradient(89.85deg, #000000 0.13%, #000000 0.14%, rgba(0, 0, 0, 0) 99.56%); */
+}
+
+.bg-jordy-blue{
+    background-color: var(--jordy-blue);
+}
+
+.fs--14{
+    font-size: 14px;
+}
+.style-none{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.banner__content h1{
+    width: 100%;
+    max-width: 599px;
+    font-size: 40px;
+}
+@media screen and (min-width:768px){
+    .banner__content h1{
+        font-size: 58px;
+    }
+}
+.banner__content p{
+    width: 100%;
+    max-width: 376px;
+}
+.features{
+    padding: 110px 0;
+}
+.features div p{
+    width: 100%;
+    max-width: 234px;
+}
+
+.row-wrapper{
+    padding-bottom: 60px;
+}
+
+@media screen and (min-width:768px){
+    .row-wrapper{
+        padding-bottom: 145px;
+    }
+}
+
+.testimonial__regina:nth-child(3){
+    margin-top: 30px;
+}
+
+@media screen and (min-width:768px){
+    .testimonial__regina:nth-child(3){
+        margin-top: 0;
+    }
+}
+
+.testimonial__regina div{
+    padding: 30px 40px;
+}
+
+.testimonial__desc,.industry__desc,.pricing__desc{
+    margin-top: 75px;
+    margin-bottom: 60px;
+}
+
+.testimonial__desc p,.industry__desc p,.pricing__desc{
+    width: 100%;
+    max-width: 470px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:768px){
+    .testimonial__desc,.industry__desc{
+        margin-top: 112px;
+        margin-bottom: 120px;
+    }
+}
+
+.industry__cols{
+    margin-top: 30px;
+}
+
+@media screen and (min-width:768px){
+    .industry__cols{
+        margin-top: 0;
+    }
+}
+
+.star__item{
+    height: 1.5rem;
+    width: 1.5rem;
+    clip-path: polygon(50% 0%,75% 25%,100% 24%,80% 60%,100% 90%,50% 70%,10% 90%,20% 60%,0% 24%,25% 25%);
+    border: 1px solid #F3CD03;
+}
+
+.industry__item{
+    width: 100%;
+    max-width: 331px;
+    position: relative;
+}
+
+.industry__item img{
+    width: 100%;
+}
+
+.industry__item-content{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
+
+.navbar--bg{
+    background-color: var(--ebony-clay);
+}
+
+.navbar__login{
+    display: none !important;
+}
+
+.banner__content{
+    margin-top: 80px;
+    margin-bottom: 10px;
+}
+
+.pricing__item{
+    /* width: 100%;
+    max-width: 327px; */
+    border-radius: 10px;
+    padding: 50px 40px;
+}
+
+.pricing__item-info-tick{
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.pricing__item-info-tick::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 9px;
+    background-color: var(--white);
+    top: 61%;
+    left: 19%;
+    transform: rotate(45deg);
+}
+
+.pricing__item-info-tick::before{
+    content: "";
+    position: absolute;
+    height: 3px;
+    width: 19px;
+    background-color: var(--white);
+    top: 50%;
+    left: 32%;
+    transform: rotate(-45deg)
+}
+
+.pricng__item-info-item{
+    gap: 10px;
+}
+
+/* .pricing__item{
+    padding: 50px 40px;
+} */
+
+@media screen and (min-width: 768px) {
+    .navbar__login{
+      display: flex !important;
+      gap: 45px;
+    }
+
+    .navbar--bg{
+        background-color: transparent;
+    }
+
+    .navbar__position{
+        position: fixed;
+        width: 100%;
+    }
+
+    .banner__gradient{
+        min-height: 100vh;
+    }
+
+    .searchbar{
+        display: none !important;
+    }
+
+    .features{
+        padding: 137px 0;
+    }
+
+    .testimonial__regina{
+        position: relative;
+    }
+
+    .testimonial__image{
+        padding: 0 !important;
+        height: 52px;
+        width: 52px;
+        border-radius: 50%;
+        position: absolute;
+        top: 15%;
+        left: -2%;
+    }
+    .testimonial__image img{
+        height: 100%;
+        width: 100%;
+    }
+  }
